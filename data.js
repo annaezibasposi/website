@@ -2,7 +2,7 @@ const data={
 date:"2026-10-24T14:00:00",
 rsvp:"#",
 fr:{
-subtitle:"24 octobre 2026 JKHUSIOHV • Varese, Italie",
+subtitle:"24 octobre 2026 • Varese, Italie",
 countdown:"Jours jusqu'au mariage",
 info:"Informations",
 church:"Église de Varese, 14h00",
