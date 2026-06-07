@@ -2,7 +2,7 @@ const data={
 date:"2026-10-24T14:00:00",
 rsvp:"#",
 fr:{
-subtitle:"24 octobre 2026 • Varese, Italie",
+subtitle:"24 octobre 2026 NOPOPOOOOJDZIJDOZJD • Varese, Italie",
 countdown:"Jours jusqu'au mariage",
 info:"Informations",
 church:"Église de Varese, 14h00",
@@ -17,18 +17,11 @@ info:"Informazioni",
 church:"Chiesa di Varese, ore 14:00",
 venue:"Villa a Varese",
 stay:"Hotel a Varese",
-about:"Anna e Ziba amano viaggiare, e si amano in generale..."
+about:"Anna e Ziba amano viaggiare."
 },
 gifts:[
 {name:"Luna di miele",price:1200},
 {name:"Macchina caffè",price:250},
 {name:"Fotografo",price:800}
-{name:"Shiba",price:800}
-gifts:[
-{name:"Luna di miele",price:1200},
-{name:"Macchina caffè",price:250},
-{name:"Action figures di Star Wars",price:800}
-{name:"Shiba 🐕🐕🐕🐕",price:800}
-
 ]
 }

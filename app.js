@@ -1,5 +1,14 @@
 let lang='fr';
 
+function showSection(id){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-link').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const link=[...document.querySelectorAll('.nav-link')].find(a=>a.getAttribute('onclick')===`showSection('${id}')`);
+  if(link) link.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
 function setLang(l){lang=l;render();}
 
 function render(){

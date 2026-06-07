@@ -11,14 +11,29 @@
 
 <body>
   <header>
+    <nav class="nav-menu">
+      <a class="nav-link active" onclick="showSection('home')">Home</a>
+      <a class="nav-link" onclick="showSection('info')">Info</a>
+      <a class="nav-link" onclick="showSection('gifts')">Gifts</a>
+      <a class="nav-link" onclick="showSection('rsvp')">RSVP</a>
+      <a class="nav-link" onclick="showSection('about')">About</a>
+    </nav>
     <div class="lang">
       <button onclick="setLang('fr')">FR</button>
       <button onclick="setLang('it')">IT</button>
     </div>
   </header>
 
-  <section id="home">
+  <section id="home" class="active">
     <div class="hero">
+      <!-- clickable section links in the upper part of home -->
+      <div class="home-sections" role="navigation" aria-label="Quick links to sections">
+        <a class="home-link" onclick="showSection('info')">Info</a>
+        <a class="home-link" onclick="showSection('gifts')">Gifts</a>
+        <a class="home-link" onclick="showSection('rsvp')">RSVP</a>
+        <a class="home-link" onclick="showSection('about')">About</a>
+      </div>
+
       <h1>Anna & Ziba</h1>
       <p id="subtitle"></p>
     </div>
