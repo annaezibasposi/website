@@ -51,8 +51,18 @@ header{
 
 button{margin:5px;padding:6px 10px;border:0;background:#2b2b2b;color:#fff}
 
-section{display:none;padding:90px 20px 40px;max-width:900px;margin:0 auto;min-height:calc(100vh - 90px)}
-section.active{display:block}
+/* Updated section styles for single-page layout */
+section{
+  display:block;
+  padding:90px 20px 40px;
+  max-width:900px;
+  margin:0 auto;
+  min-height:auto;
+}
+
+section.full-section{
+  display:block;
+}
 
 .hero{
   position:relative;
