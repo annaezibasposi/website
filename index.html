@@ -12,11 +12,11 @@
 <body>
   <header>
     <nav class="nav-menu">
-      <a class="nav-link active" onclick="showSection('home')">Home</a>
-      <a class="nav-link" onclick="showSection('info')">Info</a>
-      <a class="nav-link" onclick="showSection('gifts')">Gifts</a>
-      <a class="nav-link" onclick="showSection('rsvp')">RSVP</a>
-      <a class="nav-link" onclick="showSection('about')">About</a>
+      <a class="nav-link active" onclick="scrollToSection('home')">Home</a>
+      <a class="nav-link" onclick="scrollToSection('info')">Info</a>
+      <a class="nav-link" onclick="scrollToSection('gifts')">Gifts</a>
+      <a class="nav-link" onclick="scrollToSection('rsvp')">RSVP</a>
+      <a class="nav-link" onclick="scrollToSection('about')">About</a>
     </nav>
     <div class="lang">
       <button onclick="setLang('fr')">FR</button>
@@ -24,14 +24,15 @@
     </div>
   </header>
 
-  <section id="home" class="active">
+  <!-- HOME SECTION -->
+  <section id="home" class="full-section">
     <div class="hero">
       <!-- clickable section links in the upper part of home -->
       <div class="home-sections" role="navigation" aria-label="Quick links to sections">
-        <a class="home-link" onclick="showSection('info')">Info</a>
-        <a class="home-link" onclick="showSection('gifts')">Gifts</a>
-        <a class="home-link" onclick="showSection('rsvp')">RSVP</a>
-        <a class="home-link" onclick="showSection('about')">About</a>
+        <a class="home-link" onclick="scrollToSection('info')">Info</a>
+        <a class="home-link" onclick="scrollToSection('gifts')">Gifts</a>
+        <a class="home-link" onclick="scrollToSection('rsvp')">RSVP</a>
+        <a class="home-link" onclick="scrollToSection('about')">About</a>
       </div>
 
       <h1>Anna & Ziba</h1>
@@ -54,7 +55,8 @@
     </div>
   </section>
 
-  <section id="info">
+  <!-- INFO SECTION -->
+  <section id="info" class="full-section">
     <h2 id="infoTitle"></h2>
 
     <div class="card">
@@ -75,18 +77,21 @@
     </div>
   </section>
 
-  <section id="gifts">
-    <h2>Lista nozze</h2>
+  <!-- GIFTS SECTION -->
+  <section id="gifts" class="full-section">
+    <h2 id="giftsTitle">Lista nozze</h2>
     <div id="giftList"></div>
   </section>
 
-  <section id="rsvp">
-    <h2>RSVP</h2>
+  <!-- RSVP SECTION -->
+  <section id="rsvp" class="full-section">
+    <h2 id="rsvpTitle">RSVP</h2>
     <a id="rsvpLink" href="#" target="_blank">Répondre / Rispondere</a>
   </section>
 
-  <section id="about">
-    <h2>Gli sposi</h2>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="full-section">
+    <h2 id="aboutTitle">Gli sposi</h2>
     <p id="aboutText"></p>
 
     <h3>Mini game 🎮</h3>
