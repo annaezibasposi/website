@@ -17,11 +17,18 @@ info:"Informazioni",
 church:"Chiesa di Varese, ore 14:00",
 venue:"Villa a Varese",
 stay:"Hotel a Varese",
-about:"Anna e Ziba amano viaggiare."
+about:"Anna e Ziba amano viaggiare, e si amano in generale..."
 },
 gifts:[
 {name:"Luna di miele",price:1200},
 {name:"Macchina caffè",price:250},
 {name:"Fotografo",price:800}
+{name:"Shiba",price:800}
+gifts:[
+{name:"Luna di miele",price:1200},
+{name:"Macchina caffè",price:250},
+{name:"Action figures di Star Wars",price:800}
+{name:"Shiba 🐕🐕🐕🐕",price:800}
+
 ]
 }
