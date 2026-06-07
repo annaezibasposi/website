@@ -1,8 +1,8 @@
 const data={
 date:"2026-10-24T14:00:00",
 rsvp:"#",
-logo:"data:image/jpeg;base64,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", // Replace with your logo URL
-couplePhoto:"https://via.placeholder.com/800x600?text=Anna+and+Ziba", // Replace with your couple photo URL
+logo:"https://i.pinimg.com/originals/6d/28/ca/6d28cade48c7e656a42546fd6c8e037e.jpg", // Shiba Inu Wedding Logo
+couplePhoto:"https://images.unsplash.com/photo-1508672019048-805c876b67e2?fit=crop&w=800&q=80", // Cute Shibas
 churchLocation:{
   name:"Chiesa di Varese",
   address:"Via Chiesa, Varese, Italia",
@@ -25,7 +25,8 @@ church:"Église de Varese, 14h00",
 venue:"Villa de réception à Varese",
 stay:"Hôtels à Varese",
 about:"Anna et Ziba aiment voyager.",
-gifts:"Lista dei regali"
+gifts:"Lista dei regali",
+rsvp:"RSVP"
 },
 it:{
 subtitle:"24 ottobre 2026 • Varese, Italia",
@@ -35,43 +36,94 @@ church:"Chiesa di Varese, ore 14:00",
 venue:"Villa a Varese",
 stay:"Hotel a Varese",
 about:"Anna e Ziba amano viaggiare.",
-gifts:"Lista nozze"
+gifts:"Lista nozze",
+rsvp:"RSVP",
+aboutTitle:"Gli sposi"
 },
 gifts:[
   {
     name:"Luna di miele",
-    price:1200,
-    paid:350,
-    image:"https://via.placeholder.com/150?text=Honeymoon",
+    price:2000,
+    paid:500,
+    image:"https://images.unsplash.com/photo-1488646953014-85cb44e25828?fit=crop&w=400&q=80",
     emoji:"🌙"
   },
   {
-    name:"Macchina caffè",
-    price:250,
+    name:"Macchina caffè premium",
+    price:400,
     paid:0,
-    image:"https://via.placeholder.com/150?text=Coffee+Machine",
+    image:"https://images.unsplash.com/photo-1517668808822-9ebb02ae2a0e?fit=crop&w=400&q=80",
     emoji:"☕"
   },
   {
-    name:"Fotografo",
-    price:800,
-    paid:500,
-    image:"https://via.placeholder.com/150?text=Photographer",
+    name:"Fotografo professionista",
+    price:1200,
+    paid:600,
+    image:"https://images.unsplash.com/photo-1502920917128-1aa500764cbd?fit=crop&w=400&q=80",
     emoji:"📷"
   },
   {
-    name:"Tavolo della sposa",
-    price:400,
-    paid:200,
-    image:"https://via.placeholder.com/150?text=Wedding+Table",
-    emoji:"💒"
+    name:"Set biancheria lusso",
+    price:350,
+    paid:150,
+    image:"https://images.unsplash.com/photo-1560707303-4e980ce876ad?fit=crop&w=400&q=80",
+    emoji:"🛏️"
   },
   {
-    name:"Torta nuziale",
+    name:"Mixer cucina KitchenAid",
+    price:550,
+    paid:0,
+    image:"https://images.unsplash.com/photo-1578500494198-246f612d03b3?fit=crop&w=400&q=80",
+    emoji:"🍰"
+  },
+  {
+    name:"Servizio di piatti fine china",
+    price:600,
+    paid:200,
+    image:"https://images.unsplash.com/photo-1610701596007-11502861dcfa?fit=crop&w=400&q=80",
+    emoji:"🍽️"
+  },
+  {
+    name:"Valigie da viaggio",
+    price:450,
+    paid:0,
+    image:"https://images.unsplash.com/photo-1519046904884-53103b34b206?fit=crop&w=400&q=80",
+    emoji:"🧳"
+  },
+  {
+    name:"Smart speaker Google Home",
+    price:200,
+    paid:200,
+    image:"https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?fit=crop&w=400&q=80",
+    emoji:"🔊"
+  },
+  {
+    name:"Frantoio ad olio d'oliva",
     price:300,
     paid:0,
-    image:"https://via.placeholder.com/150?text=Wedding+Cake",
-    emoji:"🎂"
+    image:"https://images.unsplash.com/photo-1585518419759-8949f3cd4f37?fit=crop&w=400&q=80",
+    emoji:"🫒"
+  },
+  {
+    name:"Cesto regalo gourmet",
+    price:250,
+    paid:250,
+    image:"https://images.unsplash.com/photo-1599599810694-b5ac4dd64b73?fit=crop&w=400&q=80",
+    emoji:"🎁"
+  },
+  {
+    name:"Friggitrice ad aria",
+    price:350,
+    paid:0,
+    image:"https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?fit=crop&w=400&q=80",
+    emoji:"🍟"
+  },
+  {
+    name:"Spa day per due",
+    price:500,
+    paid:500,
+    image:"https://images.unsplash.com/photo-1540555700111-6966599ecca2?fit=crop&w=400&q=80",
+    emoji:"💆"
   }
 ]
 }
