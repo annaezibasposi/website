@@ -1,12 +1,17 @@
 let lang='fr';
 
-function showSection(id){
-  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+function scrollToSection(id){
+  const element=document.getElementById(id);
+  if(element){
+    element.scrollIntoView({behavior:'smooth'});
+    updateActiveNav(id);
+  }
+}
+
+function updateActiveNav(id){
   document.querySelectorAll('.nav-link').forEach(a=>a.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  const link=[...document.querySelectorAll('.nav-link')].find(a=>a.getAttribute('onclick')===`showSection('${id}')`);
+  const link=[...document.querySelectorAll('.nav-link')].find(a=>a.getAttribute('onclick')===`scrollToSection('${id}')`);
   if(link) link.classList.add('active');
-  window.scrollTo({top:0,behavior:'smooth'});
 }
 
 function setLang(l){lang=l;render();}
@@ -20,6 +25,9 @@ document.getElementById('churchInfo').innerText=t.church;
 document.getElementById('venueInfo').innerText=t.venue;
 document.getElementById('stayInfo').innerText=t.stay;
 document.getElementById('aboutText').innerText=t.about;
+document.getElementById('giftsTitle').innerText=t.gifts||'Lisa nozze';
+document.getElementById('rsvpTitle').innerText=t.rsvp||'RSVP';
+document.getElementById('aboutTitle').innerText=t.aboutTitle||'Gli sposi';
 document.getElementById('rsvpLink').href=data.rsvp;
 renderCountdown();
 renderGifts();
@@ -49,5 +57,18 @@ function buyGift(i){
 data.gifts[i].price-=50;
 renderGifts();
 }
+
+// Update active nav on scroll
+window.addEventListener('scroll',()=>{
+  const sections=['home','info','gifts','rsvp','about'];
+  let current='home';
+  sections.forEach(id=>{
+    const el=document.getElementById(id);
+    if(el && el.getBoundingClientRect().top<200){
+      current=id;
+    }
+  });
+  updateActiveNav(current);
+});
 
 render();
